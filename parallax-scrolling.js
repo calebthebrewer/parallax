@@ -1,4 +1,4 @@
-/*
+/**
  * Applies a parallax animation to elements on the page.
  * 
  * Use the 'parallax-section' class to define a parallax frame.
@@ -8,6 +8,9 @@
  * 	User data-start to define the animation start period (0 to 1, ex: .3 starts at 30%)
  * 	Use data-end to define the animation end period
  * 	Use data-easing to define any of the following: InQuad, OutQuad, InOutQuad, SlowMiddle, or Linear (linear is defalt)
+ * 
+ * @version 0.0.1
+ * @author Caleb Brewer (dayoftheduck.com)
  */
 
 ///////////// QUADRATIC EASING ////////////////////////
