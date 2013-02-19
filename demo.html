@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parallax Demo</title>
+		<script type="text/javascript" src="parallax-scroll.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<style>
+			.parallax-section {
+				height: 1200px;
+				width: 800px;
+				margin: 0 auto;
+				border: thin black solid;
+				position: relative;
+			}
+			.parallax {
+				padding: 8px 20px;
+				position: absolute;
+			}
+			#first {
+				background-color: #0000FF;
+				top: 400px;
+			}
+			#second {
+				background-color: #00FF00;
+			}
+			#third {
+				background-color: #FF0000;
+				top: 600px;
+				left: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="parallax-section">
+			<div id="first" class="parallax" data-start-x="-100" data-end-x="600">I move first!</div>
+			<div id="second" class="parallax" data-start=".5" data-start-y="800" data-end-y="300">I wait for first to arrive.</div>
+			<div id="third" class="parallax">Don't mind me, I am a non moving point of reference.</div>
+		</section>
+		<script>
+			jQuery(function($){
+				parallax( 'body' );
+			});
+		</script>
+	</body>
+</html>
